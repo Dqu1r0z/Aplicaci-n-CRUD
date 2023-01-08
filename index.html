@@ -14,38 +14,39 @@
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Lista de tareas</a>
+              <a class="navbar-brand" href="#">Notas rapidas</a>
             </div>
           </nav>
     </header>
     <main>
-        <h2><b>Esta pagina tiene como fin crear una lista de tareas pendientes</b></h2>
-        <div id="tarea">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Tarea</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <h2><b>Esta pagina tiene como fin crear una lista de notas</b></h2>
+
+        <div class="container">
+            <div class="form">
+                <form id="form">
+                    <label for="post">Escribe tus notas</label>
+                    <br><br>
+                    <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                    <br> <br>
+                    <div id="msg"></div>
+                    <button type="submit" class="btn btn-success">Guardar nota</button>
+                  </form>
+            </div>
+            <div class="notas">
+                <h3>Notas rapidas</h3>
+                <div id="posts">
+                  </div>
               </div>
         </div>
-
-        <div id="descripcion">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Descripción</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-        </div>
-
-        <div id="boton_tarea">
-            <button type="button" class="btn btn-warning">Agregar boton</button>
-        </div>
-
-        <div id="lista"></div>
-        <div></div>
+        
     </main>
     <footer>
         <p><b>
         Esta pagina fue creada con fines educativos. Ucamp Todos los derechos reservados 
         </b></p>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
-<script src="./index.js"></script>
+
 </html>
