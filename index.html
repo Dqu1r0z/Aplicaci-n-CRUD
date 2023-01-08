@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
     <title>CRUD PROYECT</title>
 </head>
 <body>
     <header>
-        <h1>Lista de tareas</h1>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Lista de tareas</a>
+            </div>
+          </nav>
     </header>
     <main>
-        <h2>Esta pagina tiene como fin crear una lista de tareas pendientes</h2>
+        <h2><b>Esta pagina tiene como fin crear una lista de tareas pendientes</b></h2>
         <div id="tarea">
-            <label for="text">Tarea</label>
-            <input type="text" name="tareas" id="input-tarea">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Tarea</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
         </div>
 
         <div id="descripcion">
-            <label for="text"></label>
-            <input type="text" name="descripcion_" id="input-descripcion">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Descripción</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
         </div>
 
         <div id="boton_tarea">
-            <button>Agregar tarea</button>
+            <button type="button" class="btn btn-warning">Agregar boton</button>
         </div>
 
         <div id="lista"></div>
         <div></div>
     </main>
     <footer>
-
+        <p><b>
+        Esta pagina fue creada con fines educativos. Ucamp Todos los derechos reservados 
+        </b></p>
     </footer>
 </body>
 <script src="./index.js"></script>
